@@ -77,7 +77,7 @@ namespace TreeTraversal
                 if (root.Left != null)
                     graph.DrawLine(pen, root.X, root.Y, root.Right.X, root.Right.Y);
                 graph.DrawImage(Resource1.Rectangle, root.X - 25, root.Y - 25, 50, 50);
-                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - 15, root.Y - 10);
+                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - 12, root.Y - 10);
                 drow_Node(root.Left);
                 drow_Node(root.Right);
             }

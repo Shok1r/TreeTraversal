@@ -9,3 +9,14 @@ C:\Users\NikitaShokorov\source\repos\TreeTraversal\TreeTraversal\obj\Debug\TreeT
 C:\Users\NikitaShokorov\source\repos\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
 C:\Users\NikitaShokorov\source\repos\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Form1.resources
 C:\Users\NikitaShokorov\source\repos\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Resource1.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csprojAssemblyReference.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Form1.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Properties.Resources.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Resource1.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.GenerateResource.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.CoreCompileInputs.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.exe
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe.config
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.pdb
