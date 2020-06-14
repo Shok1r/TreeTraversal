@@ -20,7 +20,7 @@ namespace TreeTraversal
         public Font drawFont;
 
         public CTree Tree;
-        public string str_Traversal = " ";
+        public string str_Traversal = "";
 
         public Form1()
         {
@@ -69,7 +69,10 @@ namespace TreeTraversal
                     graph.DrawLine(pen, root.X, root.Y, root.Left.X, root.Left.Y);
                 if (root.Left != null)
                     graph.DrawLine(pen, root.X, root.Y, root.Right.X, root.Right.Y);
-                graph.DrawImage(Resource1.Rectangle, root.X - 25, root.Y - 25, 50, 50);
+                if (root.Selected)
+                    graph.DrawImage(Resource1.BlueCircle, root.X - 25, root.Y - 25, 50, 50);
+                else
+                    graph.DrawImage(Resource1.GreenCircle, root.X - 25, root.Y - 25, 50, 50);
                 Size textSize = TextRenderer.MeasureText(root.Data.ToString(), drawFont); //Вычисление размера символа в пикселях
                 graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - textSize.Width / 2 + 2, root.Y - textSize.Height / 2);
                 drow_Node(root.Left);
@@ -79,7 +82,7 @@ namespace TreeTraversal
 
         private void generateRandomTree(object sender, EventArgs e)
         {
-            str_Traversal = " ";
+            str_Traversal = "";
             textBox1.Text = str_Traversal;
             Tree = new CTree(false, 5, picture.Width / 2);
             drow_Tree();
@@ -91,7 +94,7 @@ namespace TreeTraversal
             if(generateTreeForm.ShowDialog() == DialogResult.OK)
                 if (generateTreeForm.levels + 1 != 0)
                 {
-                    str_Traversal = " ";
+                    str_Traversal = "";
                     textBox1.Text = str_Traversal;
                     Tree = new CTree(true, generateTreeForm.levels + 1, picture.Width / 2);
                     drow_Tree();
@@ -104,7 +107,7 @@ namespace TreeTraversal
             if (Tree != null)
             {
 
-                if (str_Traversal != " ")
+                if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Prefix(Tree.Root);
                 textBox1.Text = str_Traversal;
@@ -115,7 +118,7 @@ namespace TreeTraversal
         {
             if (Tree != null)
             {
-                if (str_Traversal != " ")
+                if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Infix(Tree.Root);
                 textBox1.Text = str_Traversal;
@@ -125,7 +128,7 @@ namespace TreeTraversal
         {
             if (Tree != null)
             {
-                if (str_Traversal != " ")
+                if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Postfix(Tree.Root);
                 textBox1.Text = str_Traversal;

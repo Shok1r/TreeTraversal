@@ -63,9 +63,9 @@ namespace TreeTraversal {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Circle {
+        internal static System.Drawing.Bitmap BlueCircle {
             get {
-                object obj = ResourceManager.GetObject("Circle", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueCircle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace TreeTraversal {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rectangle {
+        internal static System.Drawing.Bitmap GreenCircle {
             get {
-                object obj = ResourceManager.GetObject("Rectangle", resourceCulture);
+                object obj = ResourceManager.GetObject("GreenCircle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

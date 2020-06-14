@@ -47,13 +47,16 @@ namespace TreeTraversal
     public class CTree
     {
         public CNode Root { get; set; }
-        public string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890";
+        public char[] characters = { 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                                    ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','*','+','-','/' };
         public Random rnd = new Random();
+        public int index = 0;
 
         public CTree(bool generateFull, int levels, int width)
         {
-
-            Root = new CNode(characters[rnd.Next(0, characters.Length)], 480);
+            Shake();
+            Root = new CNode(characters[index], 480);
+            index++;
             Root.X = width;
             Root.Y = 50;
             if (generateFull) Generate(Root, levels, Root.Interval_X);
@@ -69,10 +72,10 @@ namespace TreeTraversal
             }
             if (levels > 1)
             {
-                r.Data = characters[rnd.Next(0, characters.Length)];
-
-                char ldata = characters[rnd.Next(0, characters.Length)];
-                char rdata = characters[rnd.Next(0, characters.Length)];
+                char ldata = characters[index];
+                index++;
+                char rdata = characters[index];
+                index++;
 
                 r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
 
@@ -97,13 +100,14 @@ namespace TreeTraversal
                 {
                     case 0:
                         {
-
                             break;
                         }
                     case 1:
                         {
-                            char ldata = characters[rnd.Next(0, characters.Length)];
-                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            char ldata = characters[index];
+                            index++;
+                            char rdata = characters[index];
+                            index++;
                             r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
                             RandomGenerate(r.Left, levels - 1, r.Interval_X);
                             RandomGenerate(r.Right, levels - 1, r.Interval_X);
@@ -111,16 +115,20 @@ namespace TreeTraversal
                         }
                     case 2:
                         {
-                            char ldata = characters[rnd.Next(0, characters.Length)];
-                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            char ldata = characters[index];
+                            index++;
+                            char rdata = characters[index];
+                            index++;
                             r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
                             RandomGenerate(r.Left, levels - 1, r.Interval_X);
                             break;
                         }
                     case 3:
                         {
-                            char ldata = characters[rnd.Next(0, characters.Length)];
-                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            char ldata = characters[index];
+                            index++;
+                            char rdata = characters[index];
+                            index++;
                             r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
                             RandomGenerate(r.Right, levels - 1, r.Interval_X);
                             break;
@@ -129,12 +137,27 @@ namespace TreeTraversal
             }
             if (levels == 5)
             {
-                char ldata = characters[rnd.Next(0, characters.Length)];
-                char rdata = characters[rnd.Next(0, characters.Length)];
+                char ldata = characters[index];
+                index++;
+                char rdata = characters[index];
+                index++;
                 r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
                 RandomGenerate(r.Left, levels - 1, r.Interval_X);
                 RandomGenerate(r.Right, levels - 1, r.Interval_X);
             }
         }
+
+        void Shake()
+        {
+            for (int i = characters.Length - 1; i >= 1; i--)
+            {
+                int j = rnd.Next(i + 1);
+
+                char tmp = characters[j];
+                characters[j] = characters[i];
+                characters[i] = tmp;
+            }
+        }
+
     }
 }
