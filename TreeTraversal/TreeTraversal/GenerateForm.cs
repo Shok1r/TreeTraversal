@@ -29,6 +29,5 @@ namespace TreeTraversal
             DialogResult = DialogResult.OK;
             Close();
         }
-
     }
 }

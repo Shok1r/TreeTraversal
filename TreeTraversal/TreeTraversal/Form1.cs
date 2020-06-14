@@ -53,6 +53,7 @@ namespace TreeTraversal
             
         }
 
+
         private void drow_Tree()
         {
             graph.Clear(Color.FromArgb(7, 0, 45));
@@ -60,7 +61,6 @@ namespace TreeTraversal
             picture.Image = bmp;
             picture.Invalidate();
         }
-
         private void drow_Node(CNode root)
         {
             if (root != null)
@@ -70,7 +70,8 @@ namespace TreeTraversal
                 if (root.Left != null)
                     graph.DrawLine(pen, root.X, root.Y, root.Right.X, root.Right.Y);
                 graph.DrawImage(Resource1.Rectangle, root.X - 25, root.Y - 25, 50, 50);
-                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - 12, root.Y - 10);
+                Size textSize = TextRenderer.MeasureText(root.Data.ToString(), drawFont); //Вычисление размера символа в пикселях
+                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - textSize.Width / 2 + 2, root.Y - textSize.Height / 2);
                 drow_Node(root.Left);
                 drow_Node(root.Right);
             }
@@ -78,10 +79,11 @@ namespace TreeTraversal
 
         private void generateRandomTree(object sender, EventArgs e)
         {
+            str_Traversal = " ";
+            textBox1.Text = str_Traversal;
             Tree = new CTree(false, 5, picture.Width / 2);
             drow_Tree();
         }
-
         private void generateTree(object sender, EventArgs e)
         {
             var generateTreeForm = new GenerateForm();
@@ -89,6 +91,8 @@ namespace TreeTraversal
             if(generateTreeForm.ShowDialog() == DialogResult.OK)
                 if (generateTreeForm.levels + 1 != 0)
                 {
+                    str_Traversal = " ";
+                    textBox1.Text = str_Traversal;
                     Tree = new CTree(true, generateTreeForm.levels + 1, picture.Width / 2);
                     drow_Tree();
                 }
