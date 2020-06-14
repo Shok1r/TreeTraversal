@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.answerPanel = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -61,12 +62,14 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(197)))), ((int)(((byte)(255)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 16);
+            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBox1.Location = new System.Drawing.Point(275, 15);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(450, 22);
+            this.textBox1.Size = new System.Drawing.Size(450, 25);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // menuStrip1
             // 
@@ -129,6 +132,7 @@
             this.preOrderToolStripMenuItem.Name = "preOrderToolStripMenuItem";
             this.preOrderToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.preOrderToolStripMenuItem.Text = "Префиксный обход";
+            this.preOrderToolStripMenuItem.Click += new System.EventHandler(this.Prefix_Click);
             // 
             // inOrderToolStripMenuItem
             // 
@@ -137,6 +141,7 @@
             this.inOrderToolStripMenuItem.Name = "inOrderToolStripMenuItem";
             this.inOrderToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.inOrderToolStripMenuItem.Text = "Инфиксный обход";
+            this.inOrderToolStripMenuItem.Click += new System.EventHandler(this.Infix_Click);
             // 
             // postOrderToolStripMenuItem
             // 
@@ -145,6 +150,7 @@
             this.postOrderToolStripMenuItem.Name = "postOrderToolStripMenuItem";
             this.postOrderToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.postOrderToolStripMenuItem.Text = "Постфиксный обход";
+            this.postOrderToolStripMenuItem.Click += new System.EventHandler(this.Postfix_Click);
             // 
             // examToolStripMenuItem
             // 
@@ -195,6 +201,7 @@
             this.Controls.Add(this.picture);
             this.Controls.Add(this.answerPanel);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1000, 650);
             this.MinimumSize = new System.Drawing.Size(1000, 650);

@@ -102,14 +102,12 @@ namespace TreeTraversal
                         }
                     case 1:
                         {
-
                             char ldata = characters[rnd.Next(0, characters.Length)];
                             char rdata = characters[rnd.Next(0, characters.Length)];
                             r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
                             RandomGenerate(r.Left, levels - 1, r.Interval_X);
                             RandomGenerate(r.Right, levels - 1, r.Interval_X);
                             break;
-
                         }
                     case 2:
                         {
@@ -127,9 +125,7 @@ namespace TreeTraversal
                             RandomGenerate(r.Right, levels - 1, r.Interval_X);
                             break;
                         }
-
                 }
-
             }
             if (levels == 5)
             {
@@ -139,9 +135,6 @@ namespace TreeTraversal
                 RandomGenerate(r.Left, levels - 1, r.Interval_X);
                 RandomGenerate(r.Right, levels - 1, r.Interval_X);
             }
-
-
         }
-
     }
 }
