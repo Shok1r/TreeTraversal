@@ -29,7 +29,7 @@ namespace TreeTraversal
             graph = Graphics.FromImage(bmp);
             graph.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen = new Pen(Color.Blue, 3);
-            drawFont = new Font("Arial", 16);
+            drawFont = new Font("Arial Rounded MT Pro Cyr", 16);
         }
         private void treeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -81,7 +81,7 @@ namespace TreeTraversal
                 if (root.Left != null)
                     graph.DrawLine(pen, root.X, root.Y, root.Right.X, root.Right.Y);
                 graph.DrawImage(Resource1.Rectangle, root.X - 25, root.Y - 25, 50, 50);
-                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - 12, root.Y - 10);
+                graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - 12, root.Y - 12);
                 drow_Node(root.Left);
                 drow_Node(root.Right);
             }
