@@ -65,7 +65,6 @@ namespace TreeTraversal
             drow_Node(Tree.Root);
             picture.Image = bmp;
             picture.Invalidate();
-
         }
 
         private void drow_Node(CNode root)
@@ -82,6 +81,5 @@ namespace TreeTraversal
                 drow_Node(root.Right);
             }
         }
-
     }
 }

@@ -40,6 +40,8 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.answerPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +49,7 @@
             // answerPanel
             // 
             this.answerPanel.BackColor = System.Drawing.Color.SlateBlue;
+            this.answerPanel.Controls.Add(this.textBox1);
             this.answerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.answerPanel.Location = new System.Drawing.Point(0, 561);
             this.answerPanel.Name = "answerPanel";
@@ -171,6 +174,17 @@
             this.picture.TabStop = false;
             this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(197)))), ((int)(((byte)(255)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(12, 9);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(450, 29);
+            this.textBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -185,6 +199,8 @@
             this.Name = "Form1";
             this.Text = "Tree Traversal";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.answerPanel.ResumeLayout(false);
+            this.answerPanel.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
@@ -207,6 +223,7 @@
         private System.Windows.Forms.ToolStripMenuItem inOrderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem postOrderToolStripMenuItem;
         private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
