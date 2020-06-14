@@ -48,18 +48,15 @@ namespace TreeTraversal
     {
         public CNode Root { get; set; }
         public string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890";
-        public string operations = "*+-/";
-
         public Random rnd = new Random();
 
-        public CTree(bool generate, int levels, int width)
+        public CTree(bool generateFull, int levels, int width)
         {
 
-            Root = new CNode('0', 0);
+            Root = new CNode(characters[rnd.Next(0, characters.Length)], 480);
             Root.X = width;
             Root.Y = 50;
-            Root.Interval_X = 480;
-            if (generate) Generate(Root, levels, Root.Interval_X);
+            if (generateFull) Generate(Root, levels, Root.Interval_X);
             else RandomGenerate(Root, levels, Root.Interval_X);
         }
 

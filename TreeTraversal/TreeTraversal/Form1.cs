@@ -29,7 +29,7 @@ namespace TreeTraversal
             graph = Graphics.FromImage(bmp);
             graph.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen = new Pen(Color.Blue, 3);
-            drawFont = new Font("Arial", 16);
+            drawFont = new Font("Arial Rounded MT", 16);
         }
 
         private void treeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,13 +47,6 @@ namespace TreeTraversal
 
         }
 
-
-        private void generateTree(object sender, EventArgs e)
-        {
-            Tree = new CTree(true, 5, picture.Width / 2);
-            drow_Tree();
-        }
-
         private void picture_MouseDown(object sender, MouseEventArgs e)
         {
             
@@ -65,11 +58,6 @@ namespace TreeTraversal
             drow_Node(Tree.Root);
             picture.Image = bmp;
             picture.Invalidate();
-        }
-        private void RandomTree(object sender, EventArgs e)
-        {
-            Tree = new CTree(false, 5, picture.Width / 2);
-            drow_Tree();
         }
 
         private void drow_Node(CNode root)
@@ -85,6 +73,25 @@ namespace TreeTraversal
                 drow_Node(root.Left);
                 drow_Node(root.Right);
             }
+        }
+
+        private void generateRandomTree(object sender, EventArgs e)
+        {
+            Tree = new CTree(false, 5, picture.Width / 2);
+            drow_Tree();
+        }
+
+        private void generateTree(object sender, EventArgs e)
+        {
+            var generateTreeForm = new GenerateForm();
+
+            if(generateTreeForm.ShowDialog() == DialogResult.OK)
+                if (generateTreeForm.levels + 1 != 0)
+                {
+                    Tree = new CTree(true, generateTreeForm.levels + 1, picture.Width / 2);
+                    drow_Tree();
+                }
+
         }
     }
 }

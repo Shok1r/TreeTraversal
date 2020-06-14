@@ -12,9 +12,23 @@ namespace TreeTraversal
 {
     public partial class GenerateForm : Form
     {
+        public int levels;
+
         public GenerateForm()
         {
             InitializeComponent();
         }
+
+        private void trackBar_Scroll(object sender, EventArgs e)
+        {
+            levels = trackBar.Value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
+        }
+
     }
 }

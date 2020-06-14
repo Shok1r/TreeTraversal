@@ -31,3 +31,4 @@ C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\Tr
 C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.CoreCompileInputs.cache
 C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.exe
 C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.GenerateForm.resources
