@@ -21,10 +21,14 @@ namespace TreeTraversal
 
         public CTree Tree;
         public string str_Traversal = "";
+<<<<<<< HEAD
         public string Exam_str_Traversal = "";
         public bool Exam = false;
         public int Char_count = 0;
         public int Error_count = 0;
+=======
+
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
         public Form1()
         {
             InitializeComponent();
@@ -125,10 +129,17 @@ namespace TreeTraversal
                     graph.DrawLine(pen, root.X, root.Y, root.Left.X, root.Left.Y);
                 if (root.Left != null)
                     graph.DrawLine(pen, root.X, root.Y, root.Right.X, root.Right.Y);
+<<<<<<< HEAD
                 if(root.Selected)
                     graph.DrawImage(Resource1.Circle, root.X - 25, root.Y - 25, 50, 50);
                 else
                     graph.DrawImage(Resource1.Rectangle, root.X - 25, root.Y - 25, 50, 50);
+=======
+                if (root.Selected)
+                    graph.DrawImage(Resource1.BlueCircle, root.X - 25, root.Y - 25, 50, 50);
+                else
+                    graph.DrawImage(Resource1.GreenCircle, root.X - 25, root.Y - 25, 50, 50);
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
                 Size textSize = TextRenderer.MeasureText(root.Data.ToString(), drawFont); //Вычисление размера символа в пикселях
                 graph.DrawString(root.Data.ToString(), drawFont, Brushes.Black, root.X - textSize.Width / 2 + 2, root.Y - textSize.Height / 2);
                 drow_Node(root.Left);
@@ -138,8 +149,12 @@ namespace TreeTraversal
 
         private void generateRandomTree(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Exam = false;
             str_Traversal = " ";
+=======
+            str_Traversal = "";
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
             textBox1.Text = str_Traversal;
             Tree = new CTree(false, 5, picture.Width / 2);
             drow_Tree();
@@ -164,7 +179,11 @@ namespace TreeTraversal
         {
             if (Tree != null)
             {
+<<<<<<< HEAD
                 Exam = false;
+=======
+
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
                 if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Prefix(Tree.Root);
@@ -176,7 +195,10 @@ namespace TreeTraversal
         {
             if (Tree != null)
             {
+<<<<<<< HEAD
                 Exam = false;
+=======
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
                 if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Infix(Tree.Root);
@@ -187,7 +209,10 @@ namespace TreeTraversal
         {
             if (Tree != null)
             {
+<<<<<<< HEAD
                 Exam = false;
+=======
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
                 if (str_Traversal != "")
                     str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
                 Postfix(Tree.Root);

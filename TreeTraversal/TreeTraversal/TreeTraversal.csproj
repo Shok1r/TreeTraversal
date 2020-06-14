@@ -70,20 +70,23 @@
     <Compile Include="GenerateForm.Designer.cs">
       <DependentUpon>GenerateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tree.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="ErrorForm.resx">
       <DependentUpon>ErrorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exam_PassForm.resx">
       <DependentUpon>Exam_PassForm.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="Tree.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+>>>>>>> cda0817df46bc276cd3a6fa49acb5a7661c23f89
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,10 +128,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Rectangle.png" />
+    <Content Include="Resources\GreenCircle.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Circle.png" />
+    <None Include="Resources\BlueCircle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
