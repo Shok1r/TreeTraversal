@@ -40,6 +40,8 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.answerPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +49,7 @@
             // answerPanel
             // 
             this.answerPanel.BackColor = System.Drawing.Color.SlateBlue;
+            this.answerPanel.Controls.Add(this.textBox1);
             this.answerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.answerPanel.Location = new System.Drawing.Point(0, 561);
             this.answerPanel.Name = "answerPanel";
@@ -114,6 +117,7 @@
             this.preOrderToolStripMenuItem.Name = "preOrderToolStripMenuItem";
             this.preOrderToolStripMenuItem.Size = new System.Drawing.Size(319, 28);
             this.preOrderToolStripMenuItem.Text = "Префиксный обход";
+            this.preOrderToolStripMenuItem.Click += new System.EventHandler(this.Prefix_Click);
             // 
             // inOrderToolStripMenuItem
             // 
@@ -122,6 +126,7 @@
             this.inOrderToolStripMenuItem.Name = "inOrderToolStripMenuItem";
             this.inOrderToolStripMenuItem.Size = new System.Drawing.Size(319, 28);
             this.inOrderToolStripMenuItem.Text = "Инфиксный обход";
+            this.inOrderToolStripMenuItem.Click += new System.EventHandler(this.Infix_Click);
             // 
             // postOrderToolStripMenuItem
             // 
@@ -130,6 +135,7 @@
             this.postOrderToolStripMenuItem.Name = "postOrderToolStripMenuItem";
             this.postOrderToolStripMenuItem.Size = new System.Drawing.Size(319, 28);
             this.postOrderToolStripMenuItem.Text = "Постфиксный обход";
+            this.postOrderToolStripMenuItem.Click += new System.EventHandler(this.Postfix_Click);
             // 
             // examToolStripMenuItem
             // 
@@ -172,6 +178,18 @@
             this.picture.TabStop = false;
             this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(163, 3);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(626, 44);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -186,6 +204,8 @@
             this.Name = "Form1";
             this.Text = "Tree Traversal";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.answerPanel.ResumeLayout(false);
+            this.answerPanel.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
@@ -208,6 +228,7 @@
         private System.Windows.Forms.ToolStripMenuItem inOrderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem postOrderToolStripMenuItem;
         private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

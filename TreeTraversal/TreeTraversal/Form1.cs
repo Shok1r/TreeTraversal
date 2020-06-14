@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -18,9 +19,8 @@ namespace TreeTraversal
         public Graphics graph;
         public Pen pen;
         public Font drawFont;
-
         public CTree Tree;
-
+        public string str_Traversal=" ";
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,6 @@ namespace TreeTraversal
             pen = new Pen(Color.Blue, 3);
             drawFont = new Font("Arial", 16);
         }
-
         private void treeToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -88,5 +87,72 @@ namespace TreeTraversal
             }
         }
 
+        private void Infix_Click(object sender, EventArgs e)
+        {
+            if (Tree != null)
+            {
+                if (str_Traversal != " ")
+                    str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
+                Infix(Tree.Root);
+                textBox1.Text = str_Traversal;
+            }
+        }
+        private void Postfix_Click(object sender, EventArgs e)
+        {
+            if (Tree != null)
+            {
+                if (str_Traversal != " ")
+                    str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
+                Postfix(Tree.Root);
+                textBox1.Text = str_Traversal;
+
+            }
+        }
+        private void Prefix_Click(object sender, EventArgs e)
+        {
+            if(Tree != null) { 
+           
+                 if(str_Traversal != " ")
+                    str_Traversal = str_Traversal.Remove(0, str_Traversal.Length);
+                 Prefix(Tree.Root);
+                textBox1.Text = str_Traversal;
+
+            }
+        }
+
+        private void Infix(CNode root)
+        {
+            if(root != null)
+            {
+                Infix(root.Left);
+                str_Traversal += root.Data.ToString();
+                Infix(root.Right);
+            }
+        }
+        private void Postfix(CNode root)
+        {
+            if (root != null)
+            {
+                Postfix(root.Left);
+                Postfix(root.Right);
+                str_Traversal += root.Data.ToString();
+
+            }
+        }
+        private void Prefix(CNode root)
+        {
+            if (root != null)
+            {
+                str_Traversal += root.Data.ToString();
+                Prefix(root.Left);
+                Prefix(root.Right);
+            }
+        }
+        
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
