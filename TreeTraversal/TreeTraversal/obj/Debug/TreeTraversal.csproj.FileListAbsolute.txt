@@ -20,3 +20,14 @@ E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe.config
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.pdb
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe.config
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.pdb
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csprojAssemblyReference.cache
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Form1.resources
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Properties.Resources.resources
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Resource1.resources
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.GenerateResource.cache
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.CoreCompileInputs.cache
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.exe
+C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb

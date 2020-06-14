@@ -67,6 +67,11 @@ namespace TreeTraversal
             picture.Invalidate();
 
         }
+        private void RandomTree(object sender, EventArgs e)
+        {
+            Tree = new CTree(false, 5, picture.Width / 2);
+            drow_Tree();
+        }
 
         private void drow_Node(CNode root)
         {
