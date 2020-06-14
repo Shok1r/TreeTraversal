@@ -60,6 +60,7 @@ namespace TreeTraversal
             Root.Y = 50;
             Root.Interval_X = 480;
             if (generate) Generate(Root, levels, Root.Interval_X);
+            else RandomGenerate(Root, levels, Root.Interval_X);
         }
 
         public void Generate(CNode r, int levels, int interval_x)
@@ -81,6 +82,68 @@ namespace TreeTraversal
                 Generate(r.Left, levels - 1, r.Interval_X);
                 Generate(r.Right, levels - 1, r.Interval_X);
             }
+        }
+
+        public void RandomGenerate(CNode r, int levels, int interval_x)
+        {
+            if (r == Root)
+            {
+                if (r.Left != null) { r.Left = null; }
+                if (r.Right != null) { r.Right = null; }
+            }
+            if (levels > 1 && levels < 5)
+            {
+
+                int choose = (rnd.Next(0, 50)) % 4;
+
+                switch (choose)
+                {
+                    case 0:
+                        {
+
+                            break;
+                        }
+                    case 1:
+                        {
+
+                            char ldata = characters[rnd.Next(0, characters.Length)];
+                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
+                            RandomGenerate(r.Left, levels - 1, r.Interval_X);
+                            RandomGenerate(r.Right, levels - 1, r.Interval_X);
+                            break;
+
+                        }
+                    case 2:
+                        {
+                            char ldata = characters[rnd.Next(0, characters.Length)];
+                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
+                            RandomGenerate(r.Left, levels - 1, r.Interval_X);
+                            break;
+                        }
+                    case 3:
+                        {
+                            char ldata = characters[rnd.Next(0, characters.Length)];
+                            char rdata = characters[rnd.Next(0, characters.Length)];
+                            r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
+                            RandomGenerate(r.Right, levels - 1, r.Interval_X);
+                            break;
+                        }
+
+                }
+
+            }
+            if (levels == 5)
+            {
+                char ldata = characters[rnd.Next(0, characters.Length)];
+                char rdata = characters[rnd.Next(0, characters.Length)];
+                r.AddChildren(ldata, rdata, r.X, r.Y, r.Interval_X);
+                RandomGenerate(r.Left, levels - 1, r.Interval_X);
+                RandomGenerate(r.Right, levels - 1, r.Interval_X);
+            }
+
+
         }
 
     }
