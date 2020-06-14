@@ -67,12 +67,13 @@ namespace TreeTraversal
         {
             if (r == Root)
             {
+                r.Data = characters[rnd.Next(0, characters.Length)];
                 if (r.Left != null) { r.Left = null; }
                 if (r.Right != null) { r.Left = null; }
             }
             if (levels > 1)
             {
-                r.Data = characters[rnd.Next(0, characters.Length)];
+                
 
                 char ldata = characters[rnd.Next(0, characters.Length)];
                 char rdata = characters[rnd.Next(0, characters.Length)];
@@ -88,6 +89,7 @@ namespace TreeTraversal
         {
             if (r == Root)
             {
+                r.Data = characters[rnd.Next(0, characters.Length)];
                 if (r.Left != null) { r.Left = null; }
                 if (r.Right != null) { r.Right = null; }
             }
