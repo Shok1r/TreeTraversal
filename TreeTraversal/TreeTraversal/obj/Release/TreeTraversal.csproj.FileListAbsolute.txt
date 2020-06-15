@@ -11,4 +11,4 @@ E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.cs
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.csproj.CoreCompileInputs.cache
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.exe
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.pdb
-E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.csprojAssemblyReference.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.HelpForm.resources

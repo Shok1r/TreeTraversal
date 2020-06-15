@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace TreeTraversal
 {
     public partial class Form1 : Form
@@ -41,7 +42,10 @@ namespace TreeTraversal
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var HelpF = new HelpForm();
+            string s = Properties.Resources.README;
+            HelpF.textBox1.Text = s;
+            HelpF.ShowDialog();
         }
 
         private void picture_MouseDown(object sender, MouseEventArgs e)
