@@ -36,11 +36,7 @@ namespace TreeTraversal
             graph.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen = new Pen(Color.Blue, 3);
             drawFont = new Font("Arial Rounded MT", 16);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            exitToolStripMenuItem.Enabled = false;
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -79,9 +75,11 @@ namespace TreeTraversal
                             Exam_passed(Tree.Root);
                             Exam = false;
                             treeToolStripMenuItem.Enabled = true;
+                            exitToolStripMenuItem.Enabled = false;
                             str_Traversal = "";
                             textBox1.Text = str_Traversal;
                             drow_Tree();
+
                         }
                     }
                     else
@@ -254,6 +252,7 @@ namespace TreeTraversal
             Prefix(Tree.Root);
             Exam = true;
             treeToolStripMenuItem.Enabled = false;
+            exitToolStripMenuItem.Enabled = true;
 
         }
         private void Exam_Infix_Click(object sender, EventArgs e)
@@ -271,6 +270,7 @@ namespace TreeTraversal
             Infix(Tree.Root);
             Exam = true;
             treeToolStripMenuItem.Enabled = false;
+            exitToolStripMenuItem.Enabled = true;
         }
         private void Exam_Postfix_Click(object sender, EventArgs e)
         {
@@ -287,6 +287,7 @@ namespace TreeTraversal
             Postfix(Tree.Root);
             Exam = true;
             treeToolStripMenuItem.Enabled = false;
+            exitToolStripMenuItem.Enabled = true;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -297,6 +298,7 @@ namespace TreeTraversal
             str_Traversal = "";
             textBox1.Text = str_Traversal;
             drow_Tree();
+            exitToolStripMenuItem.Enabled = false;
         }
     }
 }
