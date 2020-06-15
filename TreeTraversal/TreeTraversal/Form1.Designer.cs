@@ -42,6 +42,9 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.префиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.инфиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.постфиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.answerPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
@@ -157,10 +160,14 @@
             // 
             this.examToolStripMenuItem.AutoSize = false;
             this.examToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(92)))), ((int)(((byte)(251)))));
+            this.examToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.префиксныйОбходToolStripMenuItem,
+            this.инфиксныйОбходToolStripMenuItem,
+            this.постфиксныйОбходToolStripMenuItem});
             this.examToolStripMenuItem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
             this.examToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.examToolStripMenuItem.Name = "examToolStripMenuItem";
-            this.examToolStripMenuItem.Size = new System.Drawing.Size(100, 25);
+            this.examToolStripMenuItem.Size = new System.Drawing.Size(122, 25);
             this.examToolStripMenuItem.Text = "Экзамен";
             this.examToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -193,6 +200,33 @@
             this.picture.TabIndex = 2;
             this.picture.TabStop = false;
             this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
+            // 
+            // префиксныйОбходToolStripMenuItem
+            // 
+            this.префиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(92)))), ((int)(((byte)(251)))));
+            this.префиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.префиксныйОбходToolStripMenuItem.Name = "префиксныйОбходToolStripMenuItem";
+            this.префиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.префиксныйОбходToolStripMenuItem.Text = "Префиксный обход";
+            this.префиксныйОбходToolStripMenuItem.Click += new System.EventHandler(this.Exam_Prefix_Click);
+            // 
+            // инфиксныйОбходToolStripMenuItem
+            // 
+            this.инфиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(0)))), ((int)(((byte)(203)))));
+            this.инфиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.инфиксныйОбходToolStripMenuItem.Name = "инфиксныйОбходToolStripMenuItem";
+            this.инфиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.инфиксныйОбходToolStripMenuItem.Text = "Инфиксный обход";
+            this.инфиксныйОбходToolStripMenuItem.Click += new System.EventHandler(this.Exam_Infix_Click);
+            // 
+            // постфиксныйОбходToolStripMenuItem
+            // 
+            this.постфиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(1)))), ((int)(((byte)(153)))));
+            this.постфиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.постфиксныйОбходToolStripMenuItem.Name = "постфиксныйОбходToolStripMenuItem";
+            this.постфиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.постфиксныйОбходToolStripMenuItem.Text = "Постфиксный обход";
+            this.постфиксныйОбходToolStripMenuItem.Click += new System.EventHandler(this.Exam_Postfix_Click);
             // 
             // Form1
             // 
@@ -234,6 +268,9 @@
         private System.Windows.Forms.ToolStripMenuItem postOrderToolStripMenuItem;
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem префиксныйОбходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem инфиксныйОбходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem постфиксныйОбходToolStripMenuItem;
     }
 }
 
