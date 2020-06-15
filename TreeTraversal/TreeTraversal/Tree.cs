@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreeTraversal
 {
+
     public class CNode
     {
         public int X { get; set; } = 0;
@@ -21,6 +22,7 @@ namespace TreeTraversal
 
         public CNode(char data, int interval_x)
         {
+    
             Left = Right = null;
             Data = data;
             X = 0;
@@ -91,6 +93,7 @@ namespace TreeTraversal
             }
             if (levels > 1 && levels < 5)
             {
+
                 int choose = (rnd.Next(0, 50)) % 4;
 
                 switch (choose)
@@ -144,7 +147,6 @@ namespace TreeTraversal
             }
         }
 
-        //Перемешивание массива символов, для уникальности значений вершин
         void Shake()
         {
             for (int i = characters.Length - 1; i >= 1; i--)
@@ -156,5 +158,6 @@ namespace TreeTraversal
                 characters[i] = tmp;
             }
         }
+
     }
 }
