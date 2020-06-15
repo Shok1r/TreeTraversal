@@ -174,6 +174,7 @@
             // префиксныйОбходToolStripMenuItem
             // 
             this.префиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(92)))), ((int)(((byte)(251)))));
+            this.префиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.префиксныйОбходToolStripMenuItem.Name = "префиксныйОбходToolStripMenuItem";
             this.префиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.префиксныйОбходToolStripMenuItem.Text = "Префиксный обход";
@@ -182,6 +183,7 @@
             // инфиксныйОбходToolStripMenuItem
             // 
             this.инфиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(0)))), ((int)(((byte)(203)))));
+            this.инфиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.инфиксныйОбходToolStripMenuItem.Name = "инфиксныйОбходToolStripMenuItem";
             this.инфиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.инфиксныйОбходToolStripMenuItem.Text = "Инфиксный обход";
@@ -190,6 +192,7 @@
             // постфиксныйОбходToolStripMenuItem
             // 
             this.постфиксныйОбходToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(1)))), ((int)(((byte)(153)))));
+            this.постфиксныйОбходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.постфиксныйОбходToolStripMenuItem.Name = "постфиксныйОбходToolStripMenuItem";
             this.постфиксныйОбходToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.постфиксныйОбходToolStripMenuItem.Text = "Постфиксный обход";
