@@ -38,11 +38,6 @@ namespace TreeTraversal
             drawFont = new Font("Arial Rounded MT", 16);
         }
 
-        private void treeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -83,6 +78,8 @@ namespace TreeTraversal
                             ExamPass.ShowDialog();
                             Exam_passed(Tree.Root);
                             Exam = false;
+                            treeToolStripMenuItem.Enabled = true;
+                            str_Traversal = "";
                             textBox1.Text = str_Traversal;
                             drow_Tree();
                         }
@@ -256,6 +253,7 @@ namespace TreeTraversal
             }
             Prefix(Tree.Root);
             Exam = true;
+            treeToolStripMenuItem.Enabled = false;
 
         }
         private void Exam_Infix_Click(object sender, EventArgs e)
@@ -272,8 +270,7 @@ namespace TreeTraversal
             }
             Infix(Tree.Root);
             Exam = true;
-
-
+            treeToolStripMenuItem.Enabled = false;
         }
         private void Exam_Postfix_Click(object sender, EventArgs e)
         {
@@ -289,8 +286,17 @@ namespace TreeTraversal
             }
             Postfix(Tree.Root);
             Exam = true;
-
+            treeToolStripMenuItem.Enabled = false;
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Exam = false;
+            treeToolStripMenuItem.Enabled = true;
+            Exam_passed(Tree.Root);
+            str_Traversal = "";
+            textBox1.Text = str_Traversal;
+            drow_Tree();
+        }
     }
 }

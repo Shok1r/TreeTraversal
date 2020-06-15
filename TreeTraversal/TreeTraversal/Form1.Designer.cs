@@ -44,6 +44,7 @@
             this.постфиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.answerPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
@@ -106,7 +107,6 @@
             this.treeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4, 0, 0, 4);
             this.treeToolStripMenuItem.Size = new System.Drawing.Size(122, 25);
             this.treeToolStripMenuItem.Text = "Дерево";
-            this.treeToolStripMenuItem.Click += new System.EventHandler(this.treeToolStripMenuItem_Click);
             // 
             // generateRandomToolStripMenuItem
             // 
@@ -161,7 +161,8 @@
             this.examToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.префиксныйОбходToolStripMenuItem,
             this.инфиксныйОбходToolStripMenuItem,
-            this.постфиксныйОбходToolStripMenuItem});
+            this.постфиксныйОбходToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.examToolStripMenuItem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
             this.examToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.examToolStripMenuItem.Name = "examToolStripMenuItem";
@@ -216,6 +217,15 @@
             this.picture.TabStop = false;
             this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(0)))), ((int)(((byte)(123)))));
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.exitToolStripMenuItem.Text = "Выход";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -258,6 +268,7 @@
         private System.Windows.Forms.ToolStripMenuItem префиксныйОбходToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem инфиксныйОбходToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem постфиксныйОбходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
