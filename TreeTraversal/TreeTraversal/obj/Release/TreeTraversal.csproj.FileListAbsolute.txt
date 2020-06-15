@@ -1,0 +1,13 @@
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Release\TreeTraversal.exe.config
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Release\TreeTraversal.exe
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\bin\Release\TreeTraversal.pdb
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.ErrorForm.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.Exam_PassForm.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.Form1.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.GenerateForm.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.Properties.Resources.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.Resource1.resources
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.csproj.GenerateResource.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.csproj.CoreCompileInputs.cache
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.exe
+E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Release\TreeTraversal.pdb

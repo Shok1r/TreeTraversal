@@ -42,7 +42,6 @@
             this.префиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.инфиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.постфиксныйОбходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picture = new System.Windows.Forms.PictureBox();
             this.answerPanel.SuspendLayout();
@@ -81,7 +80,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.treeToolStripMenuItem,
             this.examToolStripMenuItem,
-            this.optionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -198,20 +196,10 @@
             this.постфиксныйОбходToolStripMenuItem.Text = "Постфиксный обход";
             this.постфиксныйОбходToolStripMenuItem.Click += new System.EventHandler(this.Exam_Postfix_Click);
             // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.AutoSize = false;
-            this.optionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(0)))), ((int)(((byte)(203)))));
-            this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
-            this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(100, 25);
-            this.optionsToolStripMenuItem.Text = "Опции";
-            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.AutoSize = false;
-            this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(92)))), ((int)(((byte)(251)))));
+            this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(0)))), ((int)(((byte)(203)))));
             this.helpToolStripMenuItem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
             this.helpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
@@ -259,7 +247,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem treeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem examToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generateRandomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generateFullToolStripMenuItem;
