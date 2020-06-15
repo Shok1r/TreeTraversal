@@ -32,6 +32,3 @@ C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\Tr
 C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.exe
 C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
 E:\Github\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.GenerateForm.resources
-C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.GenerateForm.resources
-C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.Exam_PassForm.resources
-C:\Users\kosty\OneDrive\Документы\GitHub\TreeTraversal\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.ErrorForm.resources
